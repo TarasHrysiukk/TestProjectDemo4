@@ -63,7 +63,7 @@ namespace LV587SETOPENCART.Tests
 
                 //Assert
                 MyAccountPage myAccountPage = new MyAccountPage(driver);
-                string expRes = "My Accountt";
+                string expRes = "My Account";
                 string actRes = myAccountPage.MyAccountText();
 
                 Assert.AreEqual(expRes, actRes);
