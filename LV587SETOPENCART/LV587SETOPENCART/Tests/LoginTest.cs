@@ -37,7 +37,7 @@ namespace LV587SETOPENCART.Tests
         public void SetUp()
         {
             ClassWithDriver classWithDriver = new ClassWithDriver(driver);
-            classWithDriver.NavigateToURL();
+            classWithDriver.NavigateTo("http://100.25.143.190/");
         }
 
         [Test]
