@@ -37,14 +37,14 @@ namespace LV587SETOPENCART.Tests
         public void SetUp()
         {
             ClassWithDriver classWithDriver = new ClassWithDriver(driver);
-            classWithDriver.NavigateToURL();
+            classWithDriver.NavigateTo("http://34.239.249.227/");
         }
 
         [Test]
-        [AllureTag("OpenCart: Change Password Test")]
-        [AllureSeverity(SeverityLevel.normal)]
-        [AllureOwner("Taras Hrysiuk")]
-        [Description("This test checks to if user can change their password")]
+       // [AllureTag("OpenCart: Change Password Test")]
+       //[AllureSeverity(SeverityLevel.normal)]
+       // [AllureOwner("Taras Hrysiuk")]
+       // [Description("This test checks to if user can change their password")]
         public void ChangePasswordPageTest()
         {
 
