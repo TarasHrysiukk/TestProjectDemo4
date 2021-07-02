@@ -38,14 +38,14 @@ namespace LV587SETOPENCART.Tests
         {
             //driver.Navigate().GoToUrl(@"http://localhost/");
             ClassWithDriver classWithDriver = new ClassWithDriver(driver);
-            classWithDriver.NavigateToURL();
+            classWithDriver.NavigateTo("http://34.239.249.227/");
         }
 
         [Test]
-        [AllureTag("OpenCart: Forgotten Password Test")]
-        [AllureSeverity(SeverityLevel.normal)]
-        [AllureOwner("Taras Hrysiuk")]
-        [Description("This test checks to if user can input their email to if he forgot password")]
+        //[AllureTag("OpenCart: Forgotten Password Test")]
+        //[AllureSeverity(SeverityLevel.normal)]
+        //[AllureOwner("Taras Hrysiuk")]
+        //[Description("This test checks to if user can input their email to if he forgot password")]
         public void ForgottenPasswordPageTest()
         {
 
