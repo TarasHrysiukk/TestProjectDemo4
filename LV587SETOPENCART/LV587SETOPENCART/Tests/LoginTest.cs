@@ -12,9 +12,9 @@ using Allure.Commons;
 namespace LV587SETOPENCART.Tests
 {
     [TestFixture]
-    [AllureNUnit]
-    [AllureSuite("[LoginForm]")]
-    [AllureDisplayIgnored]
+   // [AllureNUnit]
+   // [AllureSuite("[LoginForm]")]
+    //[AllureDisplayIgnored]
     class LoginTest
     {
         IWebDriver driver;
@@ -37,18 +37,18 @@ namespace LV587SETOPENCART.Tests
         public void SetUp()
         {
             ClassWithDriver classWithDriver = new ClassWithDriver(driver);
-            classWithDriver.NavigateTo("http://100.25.143.190/");
+            classWithDriver.NavigateTo("http://34.239.249.227/");
         }
 
         [Test]
-        [AllureTag("OpenCart: Login Test")]
-        [AllureSeverity(SeverityLevel.critical)]
-        [AllureOwner("Taras Hrysiuk")]
-        [Description("This test checks to if user can log into account")]
+       // [AllureTag("OpenCart: Login Test")]
+       // [AllureSeverity(SeverityLevel.critical)]
+       // [AllureOwner("Taras Hrysiuk")]
+       // [Description("This test checks to if user can log into account")]
         public void LoginPageTest()
         {
 
-            Screenshot AfterTestScreen = ((ITakesScreenshot)driver).GetScreenshot();
+            //Screenshot AfterTestScreen = ((ITakesScreenshot)driver).GetScreenshot();
             try
             {
                 //Click on My Account > Login
@@ -71,8 +71,8 @@ namespace LV587SETOPENCART.Tests
             }
             catch (Exception) //Take a ScreenShot if test is failed
             {
-                AfterTestScreen.SaveAsFile(@"D:\Projects_C#\Demo3\LV587SetOpencart\LV587SETOPENCART\LV587SETOPENCART\bin\Debug\net5.0\allureScreens\ScreenshotLoginTest.Png", ScreenshotImageFormat.Png);
-                AllureLifecycle.Instance.AddAttachment("TearDown", "application/png", @"D:\Projects_C#\Demo3\LV587SetOpencart\LV587SETOPENCART\LV587SETOPENCART\bin\Debug\net5.0\allureScreens\ScreenshotLoginTest.Png");
+               // AfterTestScreen.SaveAsFile(@"D:\Projects_C#\Demo3\LV587SetOpencart\LV587SETOPENCART\LV587SETOPENCART\bin\Debug\net5.0\allureScreens\ScreenshotLoginTest.Png", ScreenshotImageFormat.Png);
+                //AllureLifecycle.Instance.AddAttachment("TearDown", "application/png", @"D:\Projects_C#\Demo3\LV587SetOpencart\LV587SETOPENCART\LV587SETOPENCART\bin\Debug\net5.0\allureScreens\ScreenshotLoginTest.Png");
             }
 
 
