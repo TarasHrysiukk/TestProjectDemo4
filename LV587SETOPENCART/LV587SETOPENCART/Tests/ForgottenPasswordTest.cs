@@ -12,9 +12,9 @@ using Allure.Commons;
 namespace LV587SETOPENCART.Tests
 {
     [TestFixture]
-    [AllureNUnit]
-    [AllureSuite("[LoginForm]")]
-    [AllureDisplayIgnored]
+   // [AllureNUnit]
+   // [AllureSuite("[LoginForm]")]
+   // [AllureDisplayIgnored]
     class ForgottenPasswordTest
     {
         IWebDriver driver;
@@ -49,7 +49,7 @@ namespace LV587SETOPENCART.Tests
         public void ForgottenPasswordPageTest()
         {
 
-            Screenshot AfterTestScreen = ((ITakesScreenshot)driver).GetScreenshot();
+           // Screenshot AfterTestScreen = ((ITakesScreenshot)driver).GetScreenshot();
             try
             {
                 //Click on My Account > Login
@@ -71,8 +71,8 @@ namespace LV587SETOPENCART.Tests
             }
             catch (Exception) //Take a ScreenShot if test is failed
             {
-                AfterTestScreen.SaveAsFile(@"D:\Projects_C#\Demo3\LV587SetOpencart\LV587SETOPENCART\LV587SETOPENCART\bin\Debug\net5.0\aallureScreens\ScreenshotForgotPassTest.Png", ScreenshotImageFormat.Png);
-                AllureLifecycle.Instance.AddAttachment("TearDown", "application/png", @"D:\Projects_C#\Demo3\LV587SetOpencart\LV587SETOPENCART\LV587SETOPENCART\bin\Debug\net5.0\allureScreens\ScreenshotForgotPassTest.Png");
+                //AfterTestScreen.SaveAsFile(@"D:\Projects_C#\Demo3\LV587SetOpencart\LV587SETOPENCART\LV587SETOPENCART\bin\Debug\net5.0\aallureScreens\ScreenshotForgotPassTest.Png", ScreenshotImageFormat.Png);
+                //AllureLifecycle.Instance.AddAttachment("TearDown", "application/png", @"D:\Projects_C#\Demo3\LV587SetOpencart\LV587SETOPENCART\LV587SETOPENCART\bin\Debug\net5.0\allureScreens\ScreenshotForgotPassTest.Png");
             }
 
             Thread.Sleep(2000);  //Only for presentation (works Without it)
