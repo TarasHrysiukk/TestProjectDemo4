@@ -58,7 +58,7 @@ namespace LV587SETOPENCART.Tests
 
                 //login 
                 LoginBL loginBL = new LoginBL(driver);
-                loginBL.Login("user1@gmail.com", "qwertyasdf12345678");
+                loginBL.Login("user2@gmail.com", "qwertyasdf12345678");
                 Thread.Sleep(2000);  //Only for presentation (works Without it)
 
                 //click password button on right side bar

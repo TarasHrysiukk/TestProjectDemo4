@@ -38,7 +38,7 @@ namespace LV587SETOPENCART.Tests
         {
             //driver.Navigate().GoToUrl(@"http://localhost/");
             ClassWithDriver classWithDriver = new ClassWithDriver(driver);
-            classWithDriver.NavigateTo("http://34.239.249.227/");
+            classWithDriver.NavigateTo("http://52.2.186.195/");
         }
 
         [Test]
@@ -59,7 +59,7 @@ namespace LV587SETOPENCART.Tests
 
                 // Click on "Forgotten Password" link text and input email
                 ForgottenPasswordBL forgottenPasswordBL = new ForgottenPasswordBL(driver);
-                forgottenPasswordBL.ForgottenPassword("user1@gmail.com");
+                forgottenPasswordBL.ForgottenPassword("user2@gmail.com");
                 Thread.Sleep(2000);  //Only for presentation (works Without it)
 
                 //Assert
