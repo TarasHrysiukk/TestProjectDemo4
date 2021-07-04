@@ -86,7 +86,7 @@ namespace LV587SETOPENCART.Tests
 
                 // LoginBL loginBLL = new LoginBL(driver);
                 headerComponent.ClickOnMyAccount(MyAccountMenuActions.Login);
-                loginBL.Login("user1@gmail.com", "qwertyasdf12345678");
+                loginBL.Login("user2@gmail.com", "qwertyasdf12345678");
                 Thread.Sleep(2000);  //Only for presentation (works Without it)
                 MyAccountPage myAccountPage = new MyAccountPage(driver);
                 string expResChange = "My Account";
