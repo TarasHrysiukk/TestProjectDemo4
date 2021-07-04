@@ -71,7 +71,7 @@ namespace LV587SETOPENCART.Tests
             }
             catch (Exception) //Take a ScreenShot if test is failed
             {
-                //AfterTestScreen.SaveAsFile(@"D:\Projects_C#\Demo3\LV587SetOpencart\LV587SETOPENCART\LV587SETOPENCART\bin\Debug\net5.0\aallureScreens\ScreenshotForgotPassTest.Png", ScreenshotImageFormat.Png);
+                //tarasAfterTestScreen.SaveAsFile(@"D:\Projects_C#\Demo3\LV587SetOpencart\LV587SETOPENCART\LV587SETOPENCART\bin\Debug\net5.0\aallureScreens\ScreenshotForgotPassTest.Png", ScreenshotImageFormat.Png);
                 //AllureLifecycle.Instance.AddAttachment("TearDown", "application/png", @"D:\Projects_C#\Demo3\LV587SetOpencart\LV587SETOPENCART\LV587SETOPENCART\bin\Debug\net5.0\allureScreens\ScreenshotForgotPassTest.Png");
             }
 
