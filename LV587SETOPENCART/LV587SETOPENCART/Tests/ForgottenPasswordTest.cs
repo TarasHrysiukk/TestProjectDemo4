@@ -11,6 +11,7 @@ using Allure.Commons;
 
 namespace LV587SETOPENCART.Tests
 {
+//taras
     [TestFixture]
     [AllureNUnit]
     [AllureSuite("[LoginForm]")]
